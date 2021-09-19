@@ -1,4 +1,4 @@
-package com.app.servlet;
+package com.revature.app.servlet;
 
 import java.io.IOException;
 import java.sql.SQLException;
