@@ -10,18 +10,16 @@ public class Employee {
 	private double salary;
 	private String gender;
 	private Department department;
-	private List<Skill> skillList;
 	
 	public Employee() {}
 
-	public Employee(int id, String name, double salary, String gender, Department department, List<Skill> skillList) {
+	public Employee(int id, String name, double salary, String gender, Department department) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.salary = salary;
 		this.gender = gender;
 		this.department = department;
-		this.skillList = skillList;
 	}
 
 	public int getId() {
@@ -64,14 +62,6 @@ public class Employee {
 		this.department = department;
 	}
 
-	public List<Skill> getSkillList() {
-		return skillList;
-	}
-
-	public void setSkillList(List<Skill> skillList) {
-		this.skillList = skillList;
-	}
-
 	
 	@Override
 	public int hashCode() {
@@ -98,7 +88,7 @@ public class Employee {
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + ", gender=" + gender + ", department="
-				+ department.getName() + ", skillList=" + skillList.stream().map(e -> e.getName()).collect(Collectors.toList()) + "]";
+				+ department.getName() + "]";
 	}
 
 }
