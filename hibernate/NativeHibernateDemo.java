@@ -20,6 +20,7 @@ public class NativeHibernateDemo {
         List<Department> departmentList = query.getResultList();
         departmentList.forEach(System.out::println);
         session.getTransaction().commit();
+        session.close();
     }
 
 }
