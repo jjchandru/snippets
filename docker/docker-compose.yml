@@ -1,6 +1,12 @@
 version: '3'
 services:
-  bank-app-ui:
+  mysql:
+    image: mysql:8.0.18
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+  nginx-app:
     image: nginx:1.17.5
     ports:
-      - "8085:80"
+      - 8085:80
