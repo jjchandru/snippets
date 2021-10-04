@@ -1,0 +1,7 @@
+// Start tomcat
+// Open tomcat bin folder in command line and run the following command
+catalina run
+
+// Start jenkins
+// Open jenkins.war folder in command prompt and run the following command
+java -jar jenkins.war --httpPort=8082
