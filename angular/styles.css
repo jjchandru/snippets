@@ -50,3 +50,8 @@ input[type=button]:disabled, input[type=submit]:disabled {
   cursor: pointer;
   font-weight: bold
 }
+
+.error {
+  font-size: 12px;
+  color: red
+}
