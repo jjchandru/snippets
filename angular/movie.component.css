@@ -2,3 +2,9 @@
   font-size: 19px;
   font-weight: 500
 }
+
+.movie-genre {
+  font-size: 12px;
+  font-weight: bold;
+  color: blue
+}
